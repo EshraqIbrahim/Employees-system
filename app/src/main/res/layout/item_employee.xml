@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#FFFFFF"
+    app:cardElevation="3dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/employeeImage"
+            android:layout_width="80dp"
+            android:background="#c6c2c1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="90dp"/>
+
+        <TextView
+            android:id="@+id/employeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="3"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintTop_toBottomOf="@id/employeeName"
+            app:layout_constraintStart_toStartOf="@id/employeeName" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            android:text="Edit"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:minHeight="0dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintTop_toTopOf="@id/deleteButton"
+            app:layout_constraintEnd_toStartOf="@id/deleteButton"
+            app:layout_constraintBottom_toBottomOf="@id/deleteButton"
+            android:backgroundTint="#6fc5dc"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="Delete"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:minHeight="0dp"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/button_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="#C70039 "/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

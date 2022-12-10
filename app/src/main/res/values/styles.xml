@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.EmployeesSystem">
+        <item name="colorPrimary">#6fc5dc</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="App_SpinnerStyle">
+        <item name="android:fadeScrollbars">false</item>
+    </style>
+
+    <style name="DropdownMenuLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">#6fc5dc</item>
+        <item name="android:textColorHint">#9972809d</item>
+    </style>
+
+</resources>

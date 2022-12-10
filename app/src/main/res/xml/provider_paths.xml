@@ -1,0 +1,5 @@
+<paths>
+    <external-files-path name="external_files" path="."/>
+    <external-path name="external_files" path="."/>
+    <cache-path name="*" path="."/>
+</paths>
